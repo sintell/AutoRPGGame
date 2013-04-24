@@ -33,14 +33,15 @@ void AutoRpg::changeEvent(QEvent *e)
 void AutoRpg::on_actionNew_character_triggered()
 {
     if(game) {
-        if( QMessageBox(QMessageBox::Warning,
+        if( QMessageBox::warning(this,
                         "Game in progress",
                         "You've got already running game instace. Would you like to proceed?",
-                        QMessageBox::Ok | QMessageBox::Cancel ).exec() == QMessageBox::Accepted) {
+                        QMessageBox::Yes | QMessageBox::No ) == QMessageBox::Yes) {
             delete(m_Character);
             m_Character = 0;
             game->stop();
             delete(game);
+            qDebug() << "!!!!";
         } else {
             return;
         }
@@ -51,7 +52,9 @@ void AutoRpg::on_actionNew_character_triggered()
 
     if( newCharDlg->exec() == QDialog::Accepted ) {
         ui->statusBar->showMessage("Character " + m_Character->getName() + " created!", 5000);
+        ui->te_EventLog->clear();
     }
+
 }
 
 void AutoRpg::startGame(Character *ch)
