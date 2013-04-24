@@ -1,4 +1,4 @@
-#ifndef AUTORPG_H
+﻿#ifndef AUTORPG_H
 #define AUTORPG_H
 
 #include "newcharacter.h"
@@ -37,7 +37,6 @@ private:
 
     Game *game;
     Character* m_Character;
-
 
 };
 

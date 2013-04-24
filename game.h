@@ -1,4 +1,4 @@
-#ifndef GAME_H
+﻿#ifndef GAME_H
 #define GAME_H
 
 #include "character.h"
@@ -6,6 +6,11 @@
 
 #include <QTimer>
 #include <QTextEdit>
+
+enum class GAME_STATE {
+    GS_RUNNING = 0,
+    GS_PENDING = 1
+};
 
 class Game : public QObject
 {
@@ -16,6 +21,7 @@ public:
     ~Game();
 
     void start();
+    void stop();
 
 public slots:
     void declamation(QString);
@@ -29,7 +35,8 @@ signals:
 private:
     Character *m_MainChar;
     QTextEdit *m_EventLog;
-    QTimer *timer;
+    QTimer * timer;
+    GAME_STATE m_GameState;
 
     const unsigned short TIME_TILL_NEXT_TURN;
 };

@@ -1,7 +1,8 @@
-#include "autorpg.h"
+﻿#include "autorpg.h"
 #include "ui_autorpg.h"
 
 #include <QDebug>
+#include <QMessageBox>
 
 AutoRpg::AutoRpg(QWidget *parent) :
     QMainWindow(parent),
@@ -31,6 +32,19 @@ void AutoRpg::changeEvent(QEvent *e)
 
 void AutoRpg::on_actionNew_character_triggered()
 {
+    if(game) {
+        if( QMessageBox(QMessageBox::Warning,
+                        "Game in progress",
+                        "You've got already running game instace. Would you like to proceed?",
+                        QMessageBox::Ok | QMessageBox::Cancel ).exec() == QMessageBox::Accepted) {
+            delete(m_Character);
+            m_Character = 0;
+            game->stop();
+            delete(game);
+        } else {
+            return;
+        }
+    }
     NewCharacter *newCharDlg = new NewCharacter(this);
 
     connect(newCharDlg, SIGNAL(characterCreated(Character*)), this, SLOT(startGame(Character*)) );

@@ -1,4 +1,4 @@
-#include "game.h"
+﻿#include "game.h"
 #include <QDebug>
 
 Game::Game(QObject *parent) :
@@ -20,6 +20,7 @@ Game::Game(Character *ch, QTextEdit *textLog) :
     foreach ( unsigned stat, ch->statsList() ) {
         qDebug() << stat << " ";
     }
+
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(proceed()));
     connect(&EventsGenerator::Instance(), SIGNAL(appendToLog(QString)), m_EventLog, SLOT(append(QString)));
@@ -29,6 +30,14 @@ Game::Game(Character *ch, QTextEdit *textLog) :
 void Game::start()
 {
     timer->start(1000*TIME_TILL_NEXT_TURN);
+}
+
+void Game::stop()
+{
+    disconnect(&EventsGenerator::Instance(), SIGNAL(appendToLog(QString)), m_EventLog, SLOT(append(QString)));
+    timer->stop();
+    delete(timer);
+    timer = 0;
 }
 
 void Game::declamation(QString str)
@@ -44,7 +53,7 @@ void Game::proceed()
     qsrand(time(0));
 
     unsigned difficulty = m_MainChar->getLvl() + qrand()%(m_MainChar->getLvl()+1);
-    EventsGenerator::Instance().setDifficulty((difficulty > 0) ? (m_MainChar->getLvl()) : (0) );
+    EventsGenerator::Instance().setDifficulty((difficulty > 0) ? (difficulty) : (1) );
     EventsGenerator::Instance().setActor(m_MainChar);
 
     if(qrand()%100 > 50) {

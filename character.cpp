@@ -1,4 +1,4 @@
-#include "character.h"
+﻿#include "character.h"
 #include "qmath.h"
 #include <QDebug>
 
@@ -37,6 +37,10 @@ Character::Character(QString name, CH_RACE chRace, CH_CLASS chClass, unsigned st
     this->addGold(10);
 }
 
+Character::~Character()
+{
+
+}
 
 void Character::addExp(unsigned expirience)
 {

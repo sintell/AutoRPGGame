@@ -1,4 +1,4 @@
-#include "eventsgenerator.h"
+﻿#include "eventsgenerator.h"
 #include "qmath.h"
 #include <QDebug>
 
@@ -31,8 +31,7 @@ void EventsGenerator::generate(EVENT_TYPE type)
     m_Revard = generateRevard(m_MainActor);
 
     m_Gold = qrand()%10 + qrand()%(m_Difficulty+1) + 7;
-    m_Expirience = (qrand()%100 + qrand()%(m_Difficulty+1) + 25)*exp(m_MainActor->getLvl())/((m_MainActor->getLvl() > 0 )?exp(m_MainActor->getLvl()-1):0);
-
+    m_Expirience = (qrand()%100 + qrand()%(m_Difficulty+1) + 25)*(m_Difficulty/(m_MainActor->getLvl()+1));
     switch (m_EventType) {
     case EV_GLOBAL_EVENT:
         emit(appendToLog(m_Description + "\n" + m_Goals + "\n" + m_Results + ((m_Revard) ? " " + m_Revard->getFullName() : "")));
