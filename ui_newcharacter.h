@@ -1,4 +1,4 @@
-/********************************************************************************
+﻿/********************************************************************************
 ** Form generated from reading UI file 'newcharacter.ui'
 **
 ** Created: Tue Apr 23 20:53:11 2013
@@ -11,21 +11,21 @@
 #define UI_NEWCHARACTER_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QComboBox>
-#include <QtGui/QDialog>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QGroupBox>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpinBox>
-#include <QtGui/QVBoxLayout>
+#include <QAction>
+#include <QApplication>
+#include <QButtonGroup>
+#include <QComboBox>
+#include <QDialog>
+#include <QDialogButtonBox>
+#include <QFrame>
+#include <QGridLayout>
+#include <QGroupBox>
+#include <QHeaderView>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QSpinBox>
+#include <QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
@@ -222,36 +222,36 @@ public:
 
     void retranslateUi(QDialog *NewCharacter)
     {
-        NewCharacter->setWindowTitle(QApplication::translate("NewCharacter", "Creane new character", 0, QApplication::UnicodeUTF8));
+        NewCharacter->setWindowTitle(QApplication::translate("NewCharacter", "Creane new character", 0));
 #ifndef QT_NO_WHATSTHIS
-        NewCharacter->setWhatsThis(QApplication::translate("NewCharacter", "Character creation dialog", 0, QApplication::UnicodeUTF8));
+        NewCharacter->setWhatsThis(QApplication::translate("NewCharacter", "Character creation dialog", 0));
 #endif // QT_NO_WHATSTHIS
-        groupBox->setTitle(QApplication::translate("NewCharacter", "Information", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("NewCharacter", "Race", 0, QApplication::UnicodeUTF8));
+        groupBox->setTitle(QApplication::translate("NewCharacter", "Information", 0));
+        label_2->setText(QApplication::translate("NewCharacter", "Race", 0));
         cb_chClass->clear();
         cb_chClass->insertItems(0, QStringList()
-         << QApplication::translate("NewCharacter", "Warrior", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("NewCharacter", "Rogue", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("NewCharacter", "Mage", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("NewCharacter", "Warrior", 0)
+         << QApplication::translate("NewCharacter", "Rogue", 0)
+         << QApplication::translate("NewCharacter", "Mage", 0)
         );
-        label->setText(QApplication::translate("NewCharacter", "Name", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("NewCharacter", "Name", 0));
         le_chName->setText(QString());
-        le_chName->setPlaceholderText(QApplication::translate("NewCharacter", "Leave blank to generate random name", 0, QApplication::UnicodeUTF8));
+        le_chName->setPlaceholderText(QApplication::translate("NewCharacter", "Leave blank to generate random name", 0));
         cb_chRace->clear();
         cb_chRace->insertItems(0, QStringList()
-         << QApplication::translate("NewCharacter", "Human", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("NewCharacter", "Elf", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("NewCharacter", "Orc", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("NewCharacter", "Human", 0)
+         << QApplication::translate("NewCharacter", "Elf", 0)
+         << QApplication::translate("NewCharacter", "Orc", 0)
         );
-        label_3->setText(QApplication::translate("NewCharacter", "Class", 0, QApplication::UnicodeUTF8));
-        groupBox_2->setTitle(QApplication::translate("NewCharacter", "Characteristics", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("NewCharacter", "Constitution", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("NewCharacter", "Strength", 0, QApplication::UnicodeUTF8));
-        lb_PointsLeft->setText(QApplication::translate("NewCharacter", "0", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("NewCharacter", "Dexterity", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("NewCharacter", "Points left to spend:", 0, QApplication::UnicodeUTF8));
-        pb_ResetStats->setText(QApplication::translate("NewCharacter", "Reset", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("NewCharacter", "Intelegence", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("NewCharacter", "Class", 0));
+        groupBox_2->setTitle(QApplication::translate("NewCharacter", "Characteristics", 0));
+        label_6->setText(QApplication::translate("NewCharacter", "Constitution", 0));
+        label_4->setText(QApplication::translate("NewCharacter", "Strength", 0));
+        lb_PointsLeft->setText(QApplication::translate("NewCharacter", "0", 0));
+        label_5->setText(QApplication::translate("NewCharacter", "Dexterity", 0));
+        label_8->setText(QApplication::translate("NewCharacter", "Points left to spend:", 0));
+        pb_ResetStats->setText(QApplication::translate("NewCharacter", "Reset", 0));
+        label_7->setText(QApplication::translate("NewCharacter", "Intelegence", 0));
     } // retranslateUi
 
 };

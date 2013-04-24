@@ -1,6 +1,7 @@
-#include "namegenerator.h"
+﻿#include "namegenerator.h"
 
 #include <QDebug>
+#include <time.h>
 
 NameGenerator::NameGenerator()
 {

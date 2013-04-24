@@ -1,9 +1,10 @@
-#ifndef ITEM_H
+﻿#ifndef ITEM_H
 #define ITEM_H
 
 #include <QString>
 #include <QList>
 #include <QVariant>
+#include <time.h>
 
 class Item
 {

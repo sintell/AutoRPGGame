@@ -1,4 +1,4 @@
-/********************************************************************************
+﻿/********************************************************************************
 ** Form generated from reading UI file 'autorpg.ui'
 **
 ** Created: Tue Apr 23 20:53:11 2013
@@ -11,23 +11,23 @@
 #define UI_AUTORPG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QMainWindow>
-#include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
-#include <QtGui/QProgressBar>
-#include <QtGui/QPushButton>
-#include <QtGui/QStatusBar>
-#include <QtGui/QTextEdit>
-#include <QtGui/QToolBar>
-#include <QtGui/QWidget>
+#include <QAction>
+#include <QApplication>
+#include <QButtonGroup>
+#include <QFrame>
+#include <QGridLayout>
+#include <QHBoxLayout>
+#include <QHeaderView>
+#include <QLabel>
+#include <QMainWindow>
+#include <QMenu>
+#include <QMenuBar>
+#include <QProgressBar>
+#include <QPushButton>
+#include <QStatusBar>
+#include <QTextEdit>
+#include <QToolBar>
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -314,35 +314,35 @@ public:
 
     void retranslateUi(QMainWindow *AutoRpg)
     {
-        AutoRpg->setWindowTitle(QApplication::translate("AutoRpg", "AutoRpg", 0, QApplication::UnicodeUTF8));
-        actionNew_character->setText(QApplication::translate("AutoRpg", "New character", 0, QApplication::UnicodeUTF8));
-        actionLoad_character->setText(QApplication::translate("AutoRpg", "Load character", 0, QApplication::UnicodeUTF8));
-        actionMain_options->setText(QApplication::translate("AutoRpg", "Main options", 0, QApplication::UnicodeUTF8));
-        actionAbout_game->setText(QApplication::translate("AutoRpg", "About game", 0, QApplication::UnicodeUTF8));
-        actionAbout_author->setText(QApplication::translate("AutoRpg", "About author", 0, QApplication::UnicodeUTF8));
-        actionHelp->setText(QApplication::translate("AutoRpg", "Help", 0, QApplication::UnicodeUTF8));
-        actionQuit->setText(QApplication::translate("AutoRpg", "Quit", 0, QApplication::UnicodeUTF8));
-        actionGenerate_name->setText(QApplication::translate("AutoRpg", "Generate name", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("AutoRpg", "Con:", 0, QApplication::UnicodeUTF8));
-        lb_chCon->setText(QApplication::translate("AutoRpg", "000", 0, QApplication::UnicodeUTF8));
+        AutoRpg->setWindowTitle(QApplication::translate("AutoRpg", "AutoRpg", 0));
+        actionNew_character->setText(QApplication::translate("AutoRpg", "New character", 0));
+        actionLoad_character->setText(QApplication::translate("AutoRpg", "Load character", 0));
+        actionMain_options->setText(QApplication::translate("AutoRpg", "Main options", 0));
+        actionAbout_game->setText(QApplication::translate("AutoRpg", "About game", 0));
+        actionAbout_author->setText(QApplication::translate("AutoRpg", "About author", 0));
+        actionHelp->setText(QApplication::translate("AutoRpg", "Help", 0));
+        actionQuit->setText(QApplication::translate("AutoRpg", "Quit", 0));
+        actionGenerate_name->setText(QApplication::translate("AutoRpg", "Generate name", 0));
+        label_7->setText(QApplication::translate("AutoRpg", "Con:", 0));
+        lb_chCon->setText(QApplication::translate("AutoRpg", "000", 0));
         te_EventLog->setHtml(QApplication::translate("AutoRpg", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;\" bgcolor=\"#ffffff\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("AutoRpg", "Str:", 0, QApplication::UnicodeUTF8));
-        lb_chStr->setText(QApplication::translate("AutoRpg", "000", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("AutoRpg", "Int:", 0, QApplication::UnicodeUTF8));
-        lb_chInt->setText(QApplication::translate("AutoRpg", "000", 0, QApplication::UnicodeUTF8));
-        prb_Exp->setFormat(QApplication::translate("AutoRpg", "%v/%m", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("AutoRpg", "Set behaviour", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("AutoRpg", "Name:", 0, QApplication::UnicodeUTF8));
-        lb_chName->setText(QApplication::translate("AutoRpg", "CharName", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("AutoRpg", "Dex:", 0, QApplication::UnicodeUTF8));
-        lb_chDex->setText(QApplication::translate("AutoRpg", "000", 0, QApplication::UnicodeUTF8));
-        menuGame->setTitle(QApplication::translate("AutoRpg", "Game", 0, QApplication::UnicodeUTF8));
-        menuOptions->setTitle(QApplication::translate("AutoRpg", "Options", 0, QApplication::UnicodeUTF8));
-        menuAbout->setTitle(QApplication::translate("AutoRpg", "About", 0, QApplication::UnicodeUTF8));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", 0));
+        label_3->setText(QApplication::translate("AutoRpg", "Str:", 0));
+        lb_chStr->setText(QApplication::translate("AutoRpg", "000", 0));
+        label_9->setText(QApplication::translate("AutoRpg", "Int:", 0));
+        lb_chInt->setText(QApplication::translate("AutoRpg", "000", 0));
+        prb_Exp->setFormat(QApplication::translate("AutoRpg", "%v/%m", 0));
+        pushButton->setText(QApplication::translate("AutoRpg", "Set behaviour", 0));
+        label->setText(QApplication::translate("AutoRpg", "Name:", 0));
+        lb_chName->setText(QApplication::translate("AutoRpg", "CharName", 0));
+        label_5->setText(QApplication::translate("AutoRpg", "Dex:", 0));
+        lb_chDex->setText(QApplication::translate("AutoRpg", "000", 0));
+        menuGame->setTitle(QApplication::translate("AutoRpg", "Game", 0));
+        menuOptions->setTitle(QApplication::translate("AutoRpg", "Options", 0));
+        menuAbout->setTitle(QApplication::translate("AutoRpg", "About", 0));
     } // retranslateUi
 
 };
