@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'newcharacter.h'
 **
-** Created: Wed Apr 24 18:23:25 2013
+** Created: Thu Apr 25 00:58:04 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!
